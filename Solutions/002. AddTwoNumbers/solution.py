@@ -18,6 +18,9 @@ class ListNode:
         self.val = val
         self.next = next
 
+'''
+    We carry the 1, use it in the next node calculation
+'''
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         head = ListNode()
