@@ -20,8 +20,8 @@ class Solution:
                 if p == p[::-1]:
                     if len(p) > len(longestPalindrone):
                         longestPalindrone = p
-                i = i + 1
-            j = j + 1
+                i += 1
+            j += 1
         
         return longestPalindrone
 
