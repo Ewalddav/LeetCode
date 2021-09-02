@@ -22,7 +22,7 @@ class Solution:
                         longestPalindrone = p
                 i += 1
             j += 1
-        
+
         return longestPalindrone
 
     '''
@@ -38,7 +38,7 @@ class Solution:
                     longestPalindrone = s[l:r+1]
                 l -= 1
                 r += 1
-            
+
             # Odd Case
             l, r = i , i + 1
             while (l >= 0 and r < len(s) and s[l] == s[r]):
@@ -48,4 +48,3 @@ class Solution:
                 r += 1
             
         return longestPalindrone
-  
