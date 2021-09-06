@@ -26,7 +26,7 @@ class Solution:
 
         if x not in range((-1 << 31), (1 << 31) - 1):
             return 0
-        
+
         return x
 
     '''
@@ -36,7 +36,7 @@ class Solution:
     def reverseFast(self, x: int) -> int:
         min = -2147483648
         max = 2147483647
-        
+
         num = 0
         while x:
             digit = int(math.fmod(x, 10))
@@ -44,9 +44,9 @@ class Solution:
 
             if (num > max // 10 or (num == max // 10 and digit >= max % 10)):
                 return 0
-            
+
             if (num < min // 10 or (num == min // 10 and digit <= min % 10)):
                 return 0
             num = (num * 10) + digit
-        
+
         return num
